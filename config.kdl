@@ -18,9 +18,9 @@ input {
 }
 output "eDP-1" {
     mode "1920x1080@60"
-    scale 1.1
+    scale 1
     transform "normal"
-    position x=1920 y=0
+    position x=0 y=0
 }
 layout {
     gaps 8
@@ -56,6 +56,7 @@ layout {
     }
 }
 spawn-at-startup "qs" "-c" "noctalia-shell"
+prefer-no-csd
 hotkey-overlay {
 
 }
@@ -475,3 +476,4 @@ binds {
         power-off-monitors
     }
 }
+
